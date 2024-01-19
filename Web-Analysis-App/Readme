@@ -1,0 +1,33 @@
+Docker Run -- Windows --
+
+- E:\Web-Analysis\Analysis (Create venv file)
+python -m venv venv
+venv\Scripts\activate
+wsl --list --verbose
+
+docker builder prune -a
+docker-compose up --build
+pg_ctl status -D "C:\Program Files\PostgreSQL\14\data"
+
+docker-compose run webanalysis-backend python3 Analysis/manage.py makemigrations Prediction
+docker-compose run webanalysis-backend python3 Analysis/manage.py migrate Prediction
+docker-compose run webanalysis-backend python3 Analysis/manage.py createsuperuser
+
+
+--------- LOCAL RUN --------
+
+Backend folder is Analysis
+Frontend folder is Webanalytics
+
+Go to backend folder in terminal and run
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+Then go to frontend folder
+And run
+npm i
+npm run dev
+
+
+
