@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  webanalysis-backend:
+    build:
+      context: ./Analysis
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./Analysis/Analysis/.env
+    command: python3 Analysis/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  db:
+    env_file: ./Analysis/Analysis/.env
+    image: postgres:latest
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+
+  we-analytics-frontend:
+    depends_on:
+      - webanalysis-backend
+    build:
+      context: ./web-analytics
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./web-analytics/.env
+    volumes:
+      - ./web-analytics:/app/web-analytics
+    ports:
+      - "5173:5173"
+
