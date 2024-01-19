@@ -1,0 +1,254 @@
+* {
+  background-color: #ffff;
+}
+
+/* .nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background-color: rgb(204, 221, 255);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav ul {
+  text-align: center;
+  padding: 2rem 1.3rem;
+  background-color: rgb(204, 221, 255);
+
+
+}
+
+.nav ul li {
+  list-style: none;
+  padding: 2rem 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(204, 221, 255);
+
+}
+/* main */
+.main {
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 50px; */
+  /* background-color: #0a1cdd; */
+}
+.first-graph {
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  margin-top: revert-layer;
+}
+.donut{
+  width: 35%;
+  height: 670px;
+  margin-top: 30px ;
+  /* background-color: red; */
+}
+.chart-one{
+  border: 2px solid rgb(218, 214, 214);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(253, 252, 252, 0.19);
+  /* height: 650px; */
+  padding: 10px;
+
+}
+.section {
+  display: flex;
+  flex-direction:column;
+  margin-top: 20px;
+  /* min-height: 900px; */
+  background-color: rgb(7, 120, 120);
+}
+/* scatter chart */
+.Scatter{
+  width: 700px;
+  height: 425px;
+}
+.ScatterChart{
+  border: 2px solid rgb(218, 214, 214);
+  /* box-shadow: 1px 1px 2px 1px ; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(253, 252, 252, 0.19);
+}
+.BarChart{
+  border: 2px solid rgb(218, 214, 214);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(253, 252, 252, 0.19);
+}
+
+
+/* DataTable.css */
+
+.table-main{
+  /* margin-top: -69rem;
+  margin-left: 52rem; */
+  /* width: 470px; */
+  /* position: relative; */
+  margin-top: 100px;
+}
+.title {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack form items vertically */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  padding: 20px; /* Add padding as needed */
+  width: 900px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-box{
+  /* width: -webkit-fill-available; */
+width: 100%;
+}
+/* .form-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+} */
+.form-group-container h2{
+  text-decoration: underline;
+  font-family:system-ui;
+  color: #0a1cdd;
+}
+.form-group {
+  flex: 0 0 calc(25% - 10px);
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #100c0c;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #100c0c;
+  border-radius: 4px;
+  color: #100c0c;
+  background-color: rgb(157, 216, 245);
+  pointer-events: auto;
+  user-select: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+.buttons{
+  display: flex;
+  gap: 3px;
+}
+
+button {
+  color: #f8f4f4;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #101010;
+
+}
+
+button:hover {
+  background-color: #161716;
+  color: white;
+}
+
+.table-section{
+  /* background-color: pink; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+/* modal popup css */
+
+.modal-main {
+margin-top: 10px;
+}
+.modal-main button{
+  margin-top: inherit;
+  margin-left: auto;
+  padding: 15px 20px;
+}
+.output-data{
+  font-size: 30px;
+}
+.modal-section{
+  background-color: rgb(197, 37, 63);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 880px;
+  /* width: max-content; */
+  height: 120px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+ /* design for tile css */
+ /* .tile-main {
+  display: flex;
+  justify-content: start;
+  margin-top: -10px;
+
+ } */
+.tile{
+  /* width: 200px; */
+  height: 150px;
+  background-color: #3498db;
+  border-radius: 10px;
+  box-shadow: 11px 14px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #070606;
+  cursor: pointer;
+  /* position: relative;
+  bottom: 20px; */
+  transition: transform 0.2s ease-in-out;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile-content {
+  padding: 20px;
+  background-color: #3498db;
+  /* background-color: pink; */
+}
+
+h2 {
+  margin: 0;
+  /* font-size: 18px; */
+}
+
+p {
+  margin: 10px 0 0;
+  font-size: 24px;
+  opacity: 0.8;
+  font-weight: 800;
+}
